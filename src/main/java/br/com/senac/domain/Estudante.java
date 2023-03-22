@@ -18,7 +18,7 @@ public class Estudante {
 	
 	@Getter
 	@Setter
-	private String emailString;
+	private String email;
 	
 	@Getter
 	@Setter

@@ -38,8 +38,8 @@ public class EstudanteService {
 		 return ResponseEntity.status(HttpStatus.CREATED).body(estudante);
 	}
 	
-	public ResponseEntity<Estudante> atualizarEstudante(Estudante estudante){
-		Estudante estudanteEncontrado = listaEstudantes.get(estudante.getId());
+	public ResponseEntity<Estudante> atualizarEstudante(Long id, Estudante estudante){
+		Estudante estudanteEncontrado = listaEstudantes.get(id);
 		if(estudanteEncontrado == null) {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
 		}
